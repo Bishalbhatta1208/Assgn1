@@ -10,7 +10,7 @@ output "vpc_id" {
 output "private_subnet_ids" {
   value = module.vpc-dev.private_subnet_ids
 }
-
+/*
 output "aws_nat_gateway" {
   value = module.vpc-dev.nat_gateway_id
 }
@@ -42,3 +42,4 @@ output "aws_eip" {
   value = module.vpc-dev.aws_eip
 }
 
+*/
