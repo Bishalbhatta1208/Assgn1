@@ -1,17 +1,17 @@
 # defined default tags
 variable "default_tags" {
   default = {
-    "Owner" = "Bishal130377229"
-    "App"   = "Gateways"
+    "Owner" = "bishal"
+    "App"   = "Web"
   }
   type        = map(any)
-  description = "Default tags to be appliad to all AWS resources"
+  description = "applied to all AWS resources"
 }
 
 
 variable "prefix" {
   type        = string
-  default     = "assgn1"
+  default     = "assignment1"
   description = "Name prefix"
 }
 
@@ -42,6 +42,6 @@ variable "vpc_cidr" {
 variable "environment" {
   default     = "nonprod"
   type        = string
-  description = "Deployment Env"
+  description = "dev env"
 }
 
