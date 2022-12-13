@@ -36,7 +36,7 @@ resource "aws_vpc_peering_connection" "peering_of_vpc" {
   }
 }
 
-resource "aws_vpc_peering_connection_options" "peer_connection" {
+/*resource "aws_vpc_peering_connection_options" "peer_connection" {
   vpc_peering_connection_id = aws_vpc_peering_connection.peering_of_vpc.id
   accepter {
     allow_remote_vpc_dns_resolution = true
@@ -44,7 +44,7 @@ resource "aws_vpc_peering_connection_options" "peer_connection" {
   requester {
     allow_remote_vpc_dns_resolution = true
   }
-}
+}*/
 #Creating Route table for Peering connection 
 
 resource "aws_route_table" "acceptor_route_table" {
